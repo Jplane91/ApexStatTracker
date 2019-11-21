@@ -1,0 +1,61 @@
+﻿@model ApexStatTracker.Models.Aaron
+
+<h1>Enter Stats</h1>
+
+<h2>Enter Aaron's Stats</h2>
+<form action="/Aaron/AaronStats" method="post">
+
+    Damage: <input type="text" name="damage" value="total damage" />
+    Kills: <input type="text" name="kills" value="total kills" />
+    Revives: <input type="text" name="revives" value="revives given" />
+    Full Squad Respawn: <input type="text" name="teamRespawn" value="respawnes" />
+    Revived/Respawned: <input type="text" name="revivedRespawned" value="times revived/respawned" />
+    <input type="submit" value="Search" />
+
+
+</form>
+
+<h2>Aaron's Stats</h2>
+
+@using (Html.BeginForm("/Index", "Aaron", FormMethod.Post))
+{
+    @*<div class="form-group">
+        <label for="gameNo"></label>
+        <input type="text" id="GameNumber" name="GameNumber" value="@Model.GameNumber" />
+    </div>*@
+
+    <div class="form-group">
+        <label for="damage">Damage</label>
+        <input type="text" class="form-control" id="Damage" name="Damage" value="@Model.Damage" />
+    </div>
+
+    <div class="form-group">
+        <label for="kills">Kills</label>
+        <input type="text" class="form-control" id="Kills" name="Kills" value="@Model.Kills" />
+    </div>
+
+    <div class="form-group">
+        <label for="revives">Revives</label>
+        <input type="text" class="form-control" id="Revives" name="Revives" value="@Model.Revives" />
+    </div>
+    <div class="form-group">
+        <label for="respawns">Full Team Respawns</label>
+        <input type="text" class="form-control" id="Respawns" name="Respawns" value="@Model.Respawns" />
+    </div>
+
+    <div class="form-group">
+        <label for="revived">Times Revived or Respawned</label>
+        <input type="text" class="form-control" id="Revived" name="Revived" value="@Model.Revived" />
+    </div>
+
+    <div class="form-group">
+        <label for="gameScore">Game Score</label>
+        <input type="text" class="form-control" id="GameScore" name="GameScore" value="@Model.GameScore" />
+    </div>
+
+    //<button type="submit" class="btn btn-info" id="calculate" value="calculate" name="calculate"></button>
+
+   // <button type="submit" class="btn btn-info" id="addGame" value="addGame" name="addGame"></button>
+
+
+}
