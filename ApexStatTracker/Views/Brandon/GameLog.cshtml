@@ -31,20 +31,25 @@
             <th>
                 &nbsp;&nbsp;Game Score
             </th>
+            <th>
+                &nbsp;&nbsp; Grade
+            </th>
             <th></th>
         </tr>
     <tbody>
         @foreach (var game in Model)
         {
-            <tr>
-                <td>@game.GameNumber</td>
-                <td> &nbsp;&nbsp;@game.Damage</td>
-                <td> &nbsp;&nbsp;@game.Kills</td>
-                <td> &nbsp;&nbsp;@game.Revives</td>
-                <td> &nbsp;&nbsp;@game.Respawns</td>
-                <td> &nbsp;&nbsp;@game.Revived</td>
-                <td> &nbsp;&nbsp;@game.GameScore</td>
-            </tr>
+        <tr>
+            <td>@game.GameNumber</td>
+            <td> &nbsp;&nbsp;@game.Damage</td>
+            <td> &nbsp;&nbsp;@game.Kills</td>
+            <td> &nbsp;&nbsp;@game.Revives</td>
+            <td> &nbsp;&nbsp;@game.Respawns</td>
+            <td> &nbsp;&nbsp;@game.Revived</td>
+            <td> &nbsp;&nbsp;@game.GameScore</td>
+            <td> &nbsp;&nbsp;@game.GameScore</td>
+            <td> &nbsp;&nbsp;@ViewData["Grade"]</td>
+        </tr>
         }
     </tbody>
     </thead>

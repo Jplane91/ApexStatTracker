@@ -40,9 +40,65 @@ namespace ApexStatTracker.Controllers
                 return View();
             }
         }
-        public IActionResult GameLog()
+        public IActionResult GameLog(Brandon b)
         {
             List<Brandon> gameLog = _context.Brandon.ToList();
+            foreach (var game in gameLog)
+            {
+                if (game.GameScore >= 1800)
+                {
+                    ViewData["Grade"] = "A+";
+                }
+                else if (game.GameScore >= 1300 && game.GameScore < 1800)
+                {
+                    ViewData["Grade"] = "A";
+                }
+                else if (game.GameScore >= 1000 && game.GameScore < 1300)
+                {
+                    ViewData["Grade"] = "A-";
+                }
+                else if (game.GameScore >= 750 && game.GameScore < 1000)
+                {
+                    ViewData["Grade"] = "B+";
+                }
+                else if (game.GameScore >= 550 && game.GameScore < 750)
+                {
+                    ViewData["Grade"] = "B";
+                }
+                else if (game.GameScore >= 450 && game.GameScore < 550)
+                {
+                    ViewData["Grade"] = "B-";
+                }
+                else if (game.GameScore >= 350 && game.GameScore < 450)
+                {
+                    ViewData["Grade"] = "C+";
+                }
+                else if (game.GameScore >= 250 && game.GameScore < 350)
+                {
+                    ViewData["Grade"] = "C";
+                }
+                else if (game.GameScore >= 200 && game.GameScore < 250)
+                {
+                    ViewData["Grade"] = "C-";
+                }
+                else if (game.GameScore >= 150 && game.GameScore < 200)
+                {
+                    ViewData["Grade"] = "D+";
+                }
+                else if (game.GameScore >= 100 && game.GameScore < 150)
+                {
+                    ViewData["Grade"] = "D";
+                }
+                else if (game.GameScore >= 50 && game.GameScore < 100)
+                {
+                    ViewData["Grade"] = "D-";
+                }
+                else if (game.GameScore < 50)
+                {
+                    ViewData["Grade"] = "F";
+                }
+
+            }
             return View(gameLog);
         }
         public IActionResult Stats(Brandon b)

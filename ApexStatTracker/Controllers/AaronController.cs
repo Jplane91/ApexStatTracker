@@ -64,8 +64,8 @@ namespace ApexStatTracker.Controllers
             double gameScoreAvg = 0;
 
 
-            List<Aaron> averages = _context.Aaron.ToList();
-            foreach(var item in averages)
+            List<Aaron> aaronStats = _context.Aaron.ToList();
+            foreach (var item in aaronStats)
             {
                 gameTotal++;
                 damageTotal = damageTotal + item.Damage;
@@ -79,14 +79,14 @@ namespace ApexStatTracker.Controllers
                 revivesAvg = revivesTotal / gameTotal;
                 revivedAvg = revivedTotal / gameTotal;
                 gameScoreAvg = gameScoreTotal / gameTotal;
-                
 
-                Console.WriteLine(damageTotal);
+
             }
-           
-            
 
-                
+            Console.WriteLine(gameScoreAvg);
+
+
+
             return View(a);
         }
     }
