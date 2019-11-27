@@ -1,8 +1,44 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-lg-center" style="margin-top: 10px">
+    <div class="row">
+        <div class="col">
+            <a href="/Aaron/Stats" class="bttn">Aaron</a>
+        </div>
+        <div class="col">
+            <a href="/Brandon/Stats" class="bttn">Brandon</a>
+        </div>
+        <div class="col">
+            <a href="/Jake/Stats" class="bttn">Jake</a>
+        </div>
+    </div>
+    <br />
+    <br />
+
+
 </div>
+
+<style>
+    @@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    @@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+    .bttn {
+        border: 2px solid #c0700e;
+        padding: 0px 4px;
+        color: #c0700e;
+        text-decoration: none;
+        transition: 0.6s ease;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0 auto;
+        display: flow-root;
+    }
+
+        .bttn:hover {
+            background-color: white;
+            color: #000;
+        }
+</style>

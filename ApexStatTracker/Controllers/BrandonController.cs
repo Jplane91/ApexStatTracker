@@ -4,36 +4,34 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApexStatTracker.Models;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace ApexStatTracker.Controllers
 {
-    public class AaronController : Controller
+    public class BrandonController : Controller
     {
-        
         private readonly ApexDbContext _context;
-        public AaronController(ApexDbContext context)
+        public BrandonController(ApexDbContext context)
         {
             _context = context;
         }
         public IActionResult Index()
         {
-            return View(new Aaron());
+            return View(new Brandon());
         }
 
         [HttpPost]
-        public IActionResult Index(Aaron a, string calculate, string save)
+        public IActionResult Index(Brandon b, string calculate, string save)
         {
             if (calculate == "calc")
             {
-                a.GameScore = a.Damage + (a.Kills * 75) + (a.Revives * 50) + (a.Respawns * 150) - (a.Revived * 50);
+                b.GameScore = b.Damage + (b.Kills * 75) + (b.Revives * 50) + (b.Respawns * 150) - (b.Revived * 50);
 
-                return View(a);
+                return View(b);
             }
 
             else if (save == "save")
             {
-                _context.Aaron.Add(a);
+                _context.Brandon.Add(b);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -44,14 +42,14 @@ namespace ApexStatTracker.Controllers
         }
         public IActionResult GameLog()
         {
-            List<Aaron> gameLog = _context.Aaron.ToList();
+            List<Brandon> gameLog = _context.Brandon.ToList();
             return View(gameLog);
         }
-        public IActionResult Stats(Aaron a)
+        public IActionResult Stats(Brandon b)
         {
             int gameTotal = 0;
             double damageTotal = 0;
-            double killTotal = 0; 
+            double killTotal = 0;
             double revivesTotal = 0;
             double revivedTotal = 0;
             double respawnsTotal = 0;
@@ -64,8 +62,8 @@ namespace ApexStatTracker.Controllers
             double gameScoreAvg = 0;
 
 
-            List<Aaron> averages = _context.Aaron.ToList();
-            foreach(var item in averages)
+            List<Brandon> averages = _context.Brandon.ToList();
+            foreach (var item in averages)
             {
                 gameTotal++;
                 damageTotal = damageTotal + item.Damage;
@@ -79,15 +77,15 @@ namespace ApexStatTracker.Controllers
                 revivesAvg = revivesTotal / gameTotal;
                 revivedAvg = revivedTotal / gameTotal;
                 gameScoreAvg = gameScoreTotal / gameTotal;
-                
+
 
                 Console.WriteLine(damageTotal);
             }
-           
-            
 
-                
-            return View(a);
+
+
+
+            return View(b);
         }
     }
 }

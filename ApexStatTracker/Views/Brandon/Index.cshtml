@@ -1,8 +1,9 @@
 ﻿
+
 <h1>Enter Stats</h1>
 
-<h2>Enter Aaron's Stats</h2>
-<form action="/Aaron/Index" method="post">
+<h2>Enter Brandon's Stats</h2>
+<form action="/Brandon/Index" method="post">
 
 
     <p>Damage: <input type="number" name="Damage" value="@Model.Damage" /></p>
@@ -13,30 +14,31 @@
     <p>Game Score: <input type="number" name="GameScore" value="@Model.GameScore" /></p>
 
     <button type="submit" class="bttn" id="calc" value="calc" name="calculate">Calculate</button>
-    <button type="submit" class="bttn" id="save" value="save" name="save">Save</button>
+    <button type="submit" class="bttn" id="save" value="save" name="save"></button>
+
 </form>
 
+
 <style>
-   .bttn {
-    border: 2px solid #c0700e;
-    padding: 20px 4px;
-    color:#c0700e;
-    transition: 0.6s ease;
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flow-root;
+    .bttn {
+        border: 2px solid #c0700e;
+        padding: 20px 4px;
+        color: #c0700e;
+        transition: 0.6s ease;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flow-root;
+    }
 
-}
-
-      .bttn:hover {
+        .bttn:hover {
             background-color: white;
             color: #000;
         }
 
-        input[type=number] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
+    input[type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
 </style>

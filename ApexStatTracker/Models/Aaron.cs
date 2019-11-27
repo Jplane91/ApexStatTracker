@@ -12,5 +12,6 @@ namespace ApexStatTracker.Models
         public int Respawns { get; set; }
         public int Revived { get; set; }
         public double GameScore { get; set; }
+
     }
 }

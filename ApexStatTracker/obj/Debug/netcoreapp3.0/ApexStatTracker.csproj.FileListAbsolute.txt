@@ -142,3 +142,10 @@ C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\bin\Debug\netcore
 C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\ApexStatTracker.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Aaron\Index.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Brandon\Index.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Aaron\GameLog.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Brandon\GameLog.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Aaron\Stats.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Jake\Index.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Jake\GameLog.cshtml.g.cs
+C:\Users\Jake\Desktop\Projects\ApexStatTracker\ApexStatTracker\obj\Debug\netcoreapp3.0\Razor\Views\Jake\Stats.cshtml.g.cs
