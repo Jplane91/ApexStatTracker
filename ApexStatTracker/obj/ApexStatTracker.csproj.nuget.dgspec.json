@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jake\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj": {}
+    "C:\\Users\\jlane\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jake\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj": {
+    "C:\\Users\\jlane\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jake\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj",
+        "projectUniqueName": "C:\\Users\\jlane\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj",
         "projectName": "ApexStatTracker",
-        "projectPath": "C:\\Users\\Jake\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj",
-        "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jake\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\obj\\",
+        "projectPath": "C:\\Users\\jlane\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\ApexStatTracker.csproj",
+        "packagesPath": "C:\\Users\\jlane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jlane\\Desktop\\Projects\\ApexStatTracker\\ApexStatTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jlane\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

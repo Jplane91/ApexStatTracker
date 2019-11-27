@@ -71,7 +71,7 @@ namespace ApexStatTracker.Controllers
                 damageTotal = damageTotal + item.Damage;
                 killTotal = killTotal + item.Kills;
                 revivesTotal = revivesTotal + item.Revives;
-                revivedTotal = revivedTotal = item.Revived;
+                revivedTotal = revivedTotal + item.Revived;
                 respawnsTotal = respawnsTotal + item.Respawns;
                 gameScoreTotal = gameScoreTotal + item.GameScore;
                 damageAvg = damageTotal / gameTotal;

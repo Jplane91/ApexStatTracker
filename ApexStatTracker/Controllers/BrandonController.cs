@@ -69,7 +69,7 @@ namespace ApexStatTracker.Controllers
                 damageTotal = damageTotal + item.Damage;
                 killTotal = killTotal + item.Kills;
                 revivesTotal = revivesTotal + item.Revives;
-                revivedTotal = revivedTotal = item.Revived;
+                revivedTotal = revivedTotal + item.Revived;
                 respawnsTotal = respawnsTotal + item.Respawns;
                 gameScoreTotal = gameScoreTotal + item.GameScore;
                 damageAvg = damageTotal / gameTotal;
@@ -78,8 +78,12 @@ namespace ApexStatTracker.Controllers
                 revivedAvg = revivedTotal / gameTotal;
                 gameScoreAvg = gameScoreTotal / gameTotal;
 
-
-                Console.WriteLine(damageTotal);
+                ViewData["DamageAverage"] = damageAvg;
+                ViewData["KillAverage"] = "5";
+                ViewData["RevivesAverage"] = revivesAvg;
+                ViewData["RevivedAverage"] = revivedAvg;
+                ViewData["GameScoreAverage"] = gameScoreAvg;
+                
             }
 
 
